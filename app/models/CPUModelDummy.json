@@ -1,0 +1,34 @@
+{
+  "p1": {
+    "name": "Intel Core i5-12400F",
+    "brand": "Intel",
+    "price": 180,
+    "cores": 6,
+    "ghz": 2.5,
+    "socket": "LGA1700"
+  },
+  "p2": {
+    "name": "AMD Ryzen 5 5600X",
+    "brand": "AMD",
+    "price": 160,
+    "cores": 6,
+    "ghz": 3.7,
+    "socket": "AM4"
+  },
+  "p3": {
+    "name": "Intel Core i7-13700K",
+    "brand": "Intel",
+    "price": 350,
+    "cores": 16,
+    "ghz": 3.4,
+    "socket": "LGA1700"
+  },
+  "p4": {
+    "name": "AMD Ryzen 9 7900X",
+    "brand": "AMD",
+    "price": 420,
+    "cores": 12,
+    "ghz": 4.7,
+    "socket": "AM5"
+  }
+}

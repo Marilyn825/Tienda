@@ -1,0 +1,30 @@
+{
+  "p1": {
+    "name": "NVIDIA GeForce RTX 4060",
+    "brand": "NVIDIA",
+    "price": 299,
+    "vram": 8,
+    "type": "Gaming"
+  },
+  "p2": {
+    "name": "AMD Radeon RX 7600",
+    "brand": "AMD",
+    "price": 269,
+    "vram": 8,
+    "type": "Gaming"
+  },
+  "p3": {
+    "name": "NVIDIA RTX 4000 Ada",
+    "brand": "NVIDIA",
+    "price": 1250,
+    "vram": 20,
+    "type": "Workstation"
+  },
+  "p4": {
+    "name": "Intel Arc A380",
+    "brand": "Intel",
+    "price": 110,
+    "vram": 6,
+    "type": "Budget"
+  }
+}
