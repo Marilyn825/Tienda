@@ -1,11 +1,10 @@
-<<<<<<< HEAD
 # TP Full Stack 2026 - PC Store
 
 ### Profesora: MBA
 
 ### Alumno:
     Verónica Marilyn Buhr
-    Legajo: 0112674
+    Legajo: 0159055
 
 ### Dependencias:
     "body-parser": "^2.2.2",
@@ -30,6 +29,3 @@
     - controllers
     - models
     - routes
-=======
-# Tienda
->>>>>>> 80dfeffcd9f097c2dbc6bc795bcf736a18b22bbb
