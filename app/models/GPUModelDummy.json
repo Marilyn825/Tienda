@@ -19,12 +19,5 @@
     "price": 1250,
     "vram": 20,
     "type": "Workstation"
-  },
-  "p4": {
-    "name": "Intel Arc A380",
-    "brand": "Intel",
-    "price": 110,
-    "vram": 6,
-    "type": "Budget"
   }
 }

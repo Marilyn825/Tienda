@@ -22,13 +22,5 @@
     "cores": 16,
     "ghz": 3.4,
     "socket": "LGA1700"
-  },
-  "p4": {
-    "name": "AMD Ryzen 9 7900X",
-    "brand": "AMD",
-    "price": 420,
-    "cores": 12,
-    "ghz": 4.7,
-    "socket": "AM5"
   }
 }

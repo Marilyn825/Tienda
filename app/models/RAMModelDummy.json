@@ -22,13 +22,5 @@
     "capacity": 16,
     "speed": 6000,
     "type": "DDR5"
-  },
-  "p4": {
-    "name": "Crucial Pro 32GB DDR5",
-    "brand": "Crucial",
-    "price": 120,
-    "capacity": 32,
-    "speed": 5600,
-    "type": "DDR5"
-  }
+  } 
 }
