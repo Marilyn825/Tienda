@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # TP Full Stack 2026 - PC Store
 
 ### Profesora: MBA
@@ -29,3 +30,6 @@
     - controllers
     - models
     - routes
+=======
+# Tienda
+>>>>>>> 80dfeffcd9f097c2dbc6bc795bcf736a18b22bbb
