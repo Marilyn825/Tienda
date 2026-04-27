@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de PCs Custom</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Lato:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1 class="title">Mi proyecto Fullstack</h1>
+        <nav>
+            <a href="#"><button>Home</button></a>
+            <a href="contacto.html"><button>Contacto</button></a>
+            <a href="carrito.html"><button>Mi Carrito (<span id="contador">0</span>)</button></a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Nuestros Productos</h2>
+
+        <h3>Procesadores (CPUs)</h3>
+        <div class="contenedor-productos" id="lista-cpus">
+
+            <div class="item-producto">
+                <img class="img-producto" src="images/intel core i7.jpg" alt="Intel Core i7-13700K">
+                <h4 class="descripcion">Intel Core i7-13700K</h4>
+                <h3 class="precio">$ 350.000</h3>
+                <p>16 núcleos | 3.4 GHz | LGA1700</p>
+                <input type="number" id="cantidad-cpu1" value="1" min="1">
+                <button class="btn-comprar" id="cpu1" onclick="comprar('cpu1')">Comprar</button>
+            </div>
+
+            <div class="item-producto">
+                <img class="img-producto" src="images/adm.jpg" alt="AMD Ryzen 7 7700X">
+                <h4 class="descripcion">AMD Ryzen 7 7700X</h4>
+                <h3 class="precio">$ 290.000</h3>
+                <p>8 núcleos | 4.5 GHz | AM5</p>
+                <input type="number" id="cantidad-cpu2" value="1" min="1">
+                <button class="btn-comprar" id="cpu2" onclick="comprar('cpu2')">Comprar</button>
+            </div>
+
+            <div class="item-producto">
+                <img class="img-producto" src="images/intel core i5.jpg" alt="Intel Core i5-12400F">
+                <h4 class="descripcion">Intel Core i5-12400F</h4>
+                <h3 class="precio">$ 180.000</h3>
+                <p>6 núcleos | 2.5 GHz | LGA1700</p>
+                <input type="number" id="cantidad-cpu3" value="1" min="1">
+                <button class="btn-comprar" id="cpu3" onclick="comprar('cpu3')">Comprar</button>
+            </div>
+
+        </div>
+
+        <h3>Tarjetas de Video (GPUs)</h3>
+        <div class="contenedor-productos" id="lista-gpus">
+
+            <div class="item-producto">
+                <img class="img-producto" src="images/RTX 4070 Ti.jpg" alt="RTX 4070 Ti">
+                <h4 class="descripcion">RTX 4070 Ti</h4>
+                <h3 class="precio">$ 850.000</h3>
+                <p>12GB VRAM | Gaming</p>
+                <input type="number" id="cantidad-gpu1" value="1" min="1">
+                <button class="btn-comprar" id="gpu1" onclick="comprar('gpu1')">Comprar</button>
+            </div>
+
+            <div class="item-producto">
+                <img class="img-producto" src="images/RX 7800 XT.jpg" alt="RX 7800 XT">
+                <h4 class="descripcion">RX 7800 XT</h4>
+                <h3 class="precio">$ 620.000</h3>
+                <p>16GB VRAM | Gaming</p>
+                <input type="number" id="cantidad-gpu2" value="1" min="1">
+                <button class="btn-comprar" id="gpu2" onclick="comprar('gpu2')">Comprar</button>
+            </div>
+
+            <div class="item-producto">
+                <img class="img-producto" src="images/RTX 4060.jpg" alt="RTX 4060">
+                <h4 class="descripcion">RTX 4060</h4>
+                <h3 class="precio">$ 420.000</h3>
+                <p>8GB VRAM | Gaming</p>
+                <input type="number" id="cantidad-gpu3" value="1" min="1">
+                <button class="btn-comprar" id="gpu3" onclick="comprar('gpu3')">Comprar</button>
+            </div>
+
+        </div>
+
+        <h3>Memorias RAM</h3>
+        <div class="contenedor-productos" id="lista-rams">
+
+            <div class="item-producto">
+                <img class="img-producto" src="images/Corsair Vengeance.jpg" alt="Corsair Vengeance 16GB DDR5">
+                <h4 class="descripcion">Corsair Vengeance 16GB DDR5</h4>
+                <h3 class="precio">$ 120.000</h3>
+                <p>16GB | 5200MHz | DDR5</p>
+                <input type="number" id="cantidad-ram1" value="1" min="1">
+                <button class="btn-comprar" id="ram1" onclick="comprar('ram1')">Comprar</button>
+            </div>
+
+            <div class="item-producto">
+                <img class="img-producto" src="images/Kingston Fury.jpg" alt="Kingston Fury 32GB DDR5">
+                <h4 class="descripcion">Kingston Fury 32GB DDR5</h4>
+                <h3 class="precio">$ 210.000</h3>
+                <p>32GB | 6000MHz | DDR5</p>
+                <input type="number" id="cantidad-ram2" value="1" min="1">
+                <button class="btn-comprar" id="ram2" onclick="comprar('ram2')">Comprar</button>
+            </div>
+
+            <div class="item-producto">
+                <img class="img-producto" src="images/G.Skill Ripjaws.jpg" alt="G.Skill Ripjaws 16GB DDR4">
+                <h4 class="descripcion">G.Skill Ripjaws 16GB DDR4</h4>
+                <h3 class="precio">$ 75.000</h3>
+                <p>16GB | 3200MHz | DDR4</p>
+                <input type="number" id="cantidad-ram3" value="1" min="1">
+                <button class="btn-comprar" id="ram3" onclick="comprar('ram3')">Comprar</button>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Todos los derechos reservados - 2026</p>
+    </footer>
+
+</body>
+</html>
