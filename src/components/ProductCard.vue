@@ -3,13 +3,30 @@ import type { Product } from '../api/products'
 
 const props = defineProps<{ product: Product }>()
 const emit = defineEmits<{ buy: [product: Product] }>()
+
+const imageMap: Record<string, string> = {
+  'Intel Core i5-13600K': '/images/intel core i5.jpg',
+  'Intel Core i7-13700K': '/images/intel core i7.jpg',
+  'AMD Ryzen 7 7800X3D': '/images/adm.jpg',
+  'AMD Ryzen 5 7600': '/images/adm.jpg',
+  'NVIDIA RTX 4070': '/images/RTX 4060.jpg',
+  'NVIDIA RTX 4090': '/images/RTX 4070 Ti.jpg',
+  'AMD Radeon RX 7800 XT': '/images/RX 7800 XT.jpg',
+  'Corsair Vengeance 32GB DDR5': '/images/Corsair Vengeance.jpg',
+  'G.Skill Trident Z 16GB DDR4': '/images/G.Skill Ripjaws.jpg',
+  'Kingston Fury 64GB DDR5': '/images/Kingston Fury.jpg',
+}
+
+function getImage(name: string): string {
+  return imageMap[name] ?? 'https://placehold.co/300x200?text=Producto'
+}
 </script>
 
 <template>
   <div class="product-card">
     <img
-      src="https://placehold.co/300x200?text=Producto"
-      alt="Imagen del producto"
+     :src="getImage(props.product.name)"
+      :alt="props.product.name"
       class="product-image"
     />
     <div class="product-info">
